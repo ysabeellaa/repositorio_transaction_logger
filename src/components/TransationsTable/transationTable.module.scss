@@ -1,0 +1,34 @@
+@import '../../styles/global.scss';
+table{
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    th{
+        color: $text-body;
+        font-weight: 400;
+        padding: 1rem 2rem;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    td{
+        padding: 1rem 2rem;
+        border: 0;
+        background-color: $shape;
+        color: $text-body;
+        border-radius: 0.25rem;
+        // primeiro td
+        &:first-child{
+            color: $text-title;
+        }
+        // td se tiver a classe deposit
+        &.deposit{
+            color: $green;
+        }
+        &.withdraw{
+            color: $red;
+        }
+    }
+}
